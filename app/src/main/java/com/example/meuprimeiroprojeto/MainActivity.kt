@@ -27,22 +27,22 @@ class MainActivity : AppCompatActivity() {
             //o código se não tiver vazio
             if (weightString.isNotEmpty() && heightString.isNotEmpty()){
 
-            val weight = weightString.toFloat()
-            val height = heightString.toFloat()
+                val weight = weightString.toFloat()
+                val height = heightString.toFloat()
 
-            val finalHeight: Float = height * height
-            val imc: Float = weight / finalHeight
+                val finalHeight: Float = height * height
+                val imc: Float = weight / finalHeight
 
-            // Levei o resultado para outra tela
-            val intent = Intent(this, ResultActivity::class.java)
-                .apply {
-                    putExtra("EXTRA_RESULT", imc)
+                // Levei o resultado para outra tela
+                val intent = Intent(this, ResultActivity::class.java)
+                    .apply {
+                        putExtra("EXTRA_RESULT", imc)
+                    }
+                startActivity(intent)
+                } else {
+                // para aparecer a msg para preencher o campo
+                Toast.makeText(this, "Preencher todos os campos", Toast.LENGTH_LONG).show()
                 }
-            startActivity(intent)
-        } else {
-            // para aparecer a msg para preencher o campo
-            Toast.makeText(this, "Preencher todos os campos", Toast.LENGTH_LONG).show()
-            }
 
         }
 

@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/btnCalculate"
-        android:text="Click"
+        android:text="CALCULAR"
         android:width="1000px"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
