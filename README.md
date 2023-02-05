@@ -23,7 +23,7 @@ Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros pass
 - String resource para concatenação de textos
 
 
-### TODO
+### TO DO
 - Melhorar estilização do app
 
 ## Author
