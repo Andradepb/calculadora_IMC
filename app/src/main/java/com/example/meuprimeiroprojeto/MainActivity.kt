@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             val weightString = editWeight.text.toString()
             val heightString = editHeight.text.toString()
             // ja que estava acontecendo um crash eu coloquei esse if porque ele so vai executar
-            //o código se não tiver vazio
+            //o código se não estiver vazio
             if (weightString.isNotEmpty() && heightString.isNotEmpty()){
 
                 val weight = weightString.toFloat()

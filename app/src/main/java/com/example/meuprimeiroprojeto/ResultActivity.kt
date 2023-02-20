@@ -18,8 +18,6 @@ class ResultActivity : AppCompatActivity() {
         val tvResult:TextView = findViewById(R.id.textView_result)
         val tvClassification = findViewById<TextView>(R.id.textView_Classification)
 
-
-
         tvResult.text = resultImc.toString()
 
         val resultClassification = if (resultImc < 18.5f){
