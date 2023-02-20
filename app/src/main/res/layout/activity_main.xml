@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
 
@@ -14,18 +15,20 @@
         android:hint="Digite aqui seu peso"
         android:inputType="numberDecimal"
         android:maxLength="5"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:background="#921ef7"
+        />
 
 
     <EditText
-        android:layout_marginTop="10dp"
-        android:maxLength="5"
-        android:inputType="numberDecimal"
-        android:layout_below="@id/edtWeight"
         android:id="@+id/edtHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite aqui sua altura"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtWeight"
         android:layout_margin="15dp"/>
 
     <TextView
@@ -46,7 +49,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 
 
 </RelativeLayout>
