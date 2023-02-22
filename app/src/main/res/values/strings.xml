@@ -5,5 +5,7 @@
     <string name="Digite_aqui_sua_altura">Digite aqui sua altura</string>
     <string name="calculate">CALCULAR</string>
     <string name="imc">IMC</string>
+    <string name="Pessoa_na_balanca">Pessoa na balança</string>
+    <string name="indice_de_massa_corporea">IMC</string>
 
 </resources>
