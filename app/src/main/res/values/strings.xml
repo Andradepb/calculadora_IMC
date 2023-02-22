@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Calculadora IMC</string>
     <string name="message_classification">Classificação: %1$s</string>
+    <string name="Digite_aqui_seu_peso">Digite aqui seu peso</string>
+    <string name="Digite_aqui_sua_altura">Digite aqui sua altura</string>
+    <string name="calculate">CALCULAR</string>
+    <string name="imc">IMC</string>
 
 </resources>
