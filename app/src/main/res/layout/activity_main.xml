@@ -67,8 +67,10 @@
         android:text="@string/calculate"
         android:textAlignment="center"
         android:textColor="#F2F2F2"
+        android:textSize="15dp"
         android:textStyle="bold"
-        app:rippleColor="@color/teal_700" />
+        app:rippleColor="@color/teal_700"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView"
