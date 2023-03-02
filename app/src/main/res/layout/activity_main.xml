@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:hapticFeedbackEnabled="false"
-    android:visibility="visible"
     tools:context=".MainActivity"
-    tools:visibility="visible">
+    android:scrollbarSize="10dp">
 
 
     <EditText
@@ -81,8 +79,8 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="11dp"
         android:layout_marginBottom="104dp"
-        app:srcCompat="@drawable/imc3"
-        android:contentDescription="@string/indice_de_massa_corporea" />
+        android:contentDescription="@string/indice_de_massa_corporea"
+        app:srcCompat="@drawable/imc3" />
 
 
 </RelativeLayout>
