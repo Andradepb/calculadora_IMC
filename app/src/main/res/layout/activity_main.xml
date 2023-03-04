@@ -1,79 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:scrollbarSize="10dp">
+    android:scrollbarSize="10dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
 
-    <EditText
-        android:id="@+id/edtWeight"
-        android:layout_width="378dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:autofillHints=""
-        android:hint="@string/Digite_aqui_seu_peso"
-        android:inputType="numberDecimal"
-        android:maxLength="5"
-        android:padding="10dp"
-        android:shadowColor="#F8F7F7"
-        android:textColor="#000000"
-        android:textColorHighlight="#000000"
-        android:textColorHint="#5F5F5F"
-        android:textColorLink="#FFFFFF"
-        android:textStyle="bold" />
-
-
-    <EditText
-        android:id="@+id/edtHeight"
-        android:layout_width="378dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/edtWeight"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:autofillHints=""
-        android:hint="@string/Digite_aqui_sua_altura"
-        android:inputType="numberDecimal"
-        android:maxLength="5"
-        android:padding="10dp"
-        android:shadowColor="#F8F7F7"
-        android:textColor="#000000"
-        android:textColorHighlight="#000000"
-        android:textColorHint="#5F5F5F"
-        android:textColorLink="#FFFFFF"
-        android:textStyle="bold" />
-
-
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="33dp"
-        android:width="1000dp"
-        android:background="#030303"
-        android:text="@string/calculate"
-        android:textAlignment="center"
-        android:textColor="#F2F2F2"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:rippleColor="@color/teal_700"
-        tools:ignore="TextSizeCheck" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/edtWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Digite seu peso"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text_radius"
+            />
+
+        <EditText
+            android:id="@+id/edtHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_below="@id/edtWeight"
+            android:layout_margin="10dp"
+            android:hint="Digite sua altura"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:padding="10dp"
+            android:shadowColor="#F8F7F7"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text_radius"/>
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="388dp"
-        android:layout_height="401dp"
+        android:layout_height="230dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
@@ -82,5 +64,19 @@
         android:contentDescription="@string/indice_de_massa_corporea"
         app:srcCompat="@drawable/imc3" />
 
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="33dp"
+        android:width="1000dp"
+        android:background="@drawable/button_radius"
+        android:text="@string/calculate"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
 
-</RelativeLayout>
+</LinearLayout>
