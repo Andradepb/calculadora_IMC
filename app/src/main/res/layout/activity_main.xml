@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:scrollbarSize="10dp"
+    android:background="#ECECEC"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:scrollbarSize="10dp"
+    tools:context=".MainActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
 
 
         <EditText
@@ -23,6 +23,7 @@
             android:layout_height="150dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:background="@drawable/edit_text_radius"
             android:gravity="center"
             android:hint="Digite seu peso"
             android:inputType="numberDecimal"
@@ -30,45 +31,34 @@
             android:padding="10dp"
             android:textColor="#000000"
             android:textStyle="bold"
-            android:background="@drawable/edit_text_radius"
+
+
             />
 
         <EditText
             android:id="@+id/edtHeight"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_below="@id/edtWeight"
             android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_radius"
+            android:gravity="center"
             android:hint="Digite sua altura"
             android:inputType="numberDecimal"
             android:maxLength="5"
             android:padding="10dp"
             android:shadowColor="#F8F7F7"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:background="@drawable/edit_text_radius"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="388dp"
-        android:layout_height="230dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginBottom="104dp"
-        android:contentDescription="@string/indice_de_massa_corporea"
-        app:srcCompat="@drawable/imc3" />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="33dp"
         android:width="1000dp"
         android:background="@drawable/button_radius"
@@ -77,6 +67,17 @@
         android:textColor="#F2F2F2"
         android:textSize="15dp"
         android:textStyle="bold"
-        />
+        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="388dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="104dp"
+        android:contentDescription="@string/indice_de_massa_corporea"
+        app:srcCompat="@drawable/imc3" />
+
 
 </LinearLayout>
