@@ -33,7 +33,6 @@
         tools:text="24.56" />
 
     <TextView
-
         android:id="@+id/textView_Classification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
