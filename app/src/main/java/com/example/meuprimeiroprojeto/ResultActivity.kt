@@ -20,20 +20,23 @@ class ResultActivity : AppCompatActivity() {
 
         tvResult.text = resultImc.toString()
 
-        val resultClassification = if (resultImc < 18.5f){
-            "Abaixo do Peso"
-        } else if (resultImc in 18.5f..24.9f){
-            "Peso Normal"
-        } else if (resultImc in 25.0f..29.0f) {
-            "Obesidade I"
-        } else if (resultImc in 30.0f..39.9f){
-            "Obesidade II"
-        } else {
-            "Obesidade III"
+
+        fun resultClassification (resultImc:Float):String {
+
+            var classification = ""
+
+            classification = when {
+                resultImc < 18.5f -> "Abaixo do Peso"
+                resultImc in 18.5f..24.9f -> "Peso Normal"
+                resultImc in 25.0f..29.0f -> "Obesidade I"
+                resultImc in 30.0f..39.9f -> "Obesidade II"
+                else -> "Obesidade III"
+            }
+            return classification
         }
 
         // mostrando o resultado
-        tvClassification.text = getString(R.string.message_classification, resultClassification)
+        tvClassification.text = getString(R.string.message_classification, resultClassification(resultImc))
     }
     // Criando outra função pra voltar para primeira página
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
