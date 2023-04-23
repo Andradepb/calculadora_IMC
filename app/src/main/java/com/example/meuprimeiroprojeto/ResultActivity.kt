@@ -36,7 +36,10 @@ class ResultActivity : AppCompatActivity() {
         }
 
         // mostrando o resultado
-        tvClassification.text = getString(R.string.message_classification, resultClassification(resultImc))
+        tvClassification.text = getString(
+            R.string.message_classification,
+            resultClassification(resultImc)
+        )
     }
     // Criando outra função pra voltar para primeira página
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
